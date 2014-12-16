@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Oleksandr Bondarenko</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        $(document).ready(function(){
+            $('a[href*=#]').bind("click", function(e){
+                var anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(anchor.attr('href')).offset().top
+                }, 1000);
+                e.preventDefault();
+            });
+            return false;
+        });
+    </script>
+</head>
+<body>
+<div class="container_pages">
+    <div class="header_container">
+        <div class="header">
+
+            <div class="top_menu">
+                <ul>
+                    <li><a href="#Portfolio">Home</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#About Me">About Me</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="home">
+                <h3>Welcome to my page!</h3>
+
+                <h1>It’s nice to Meet you</h1>
+                <button>Tell Me More</button>
+            </div>
+        </div>
+    </div>
+    <div class="our_portfolio_container" >
+        <a name="Portfolio"></a>
+        <div class="our_portfolio">
+            <h1>My portfolio</h1>
+            <h5>Proin iaculis purus consequat sem cure. </h5>
+
+            <div class="site_container">
+
+                <div class="my_work">
+                    <img src="images/site_1.png">
+                    <h4>Ebony & Ivory</h4>
+                    <h6>Branding</h6>
+                </div>
+
+                <div class="my_work">
+                    <img src="images/site_2.png">
+                    <h4>Smart Stationary</h4>
+                    <h6>Print Design</h6>
+                </div>
+
+                <div class="my_work">
+                    <img src="images/site_3.png">
+                    <h4>Clever Poster</h4>
+                    <h6>Print Design</h6>
+                </div>
+
+                <div class="my_work">
+                    <img src="images/site_4.png">
+                    <h4>Vinyl Record</h4>
+                    <h6>Product Mock-Up</h6>
+                </div>
+
+                <div class="my_work">
+                    <img src="images/site_5.png">
+                    <h4>Treehouse Template</h4>
+                    <h6>Web Design</h6>
+                </div>
+
+                <div class="my_work">
+                    <img src="images/site_6.png">
+                    <h4>Burned Logo</h4>
+                    <h6>Branding</h6>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="about_me_container">
+        <a name="About Me"></a>
+        <div class="about_me">
+            <h1>About Me</h1>
+
+            <div class="info_container">
+                <div class="my_photo">
+                    <img src="images/my_photo.png">
+                </div>
+                <h6>Oleksandr Bondarenko</h6>
+                <h6>front-end developer</h6>
+
+                <div class="social">
+                    <img src="images/twitter.png">
+                    <img src="images/facebook.png">
+                    <img src="images/google+.png">
+                </div>
+            </div>
+            <div class="text_about_me">
+                <p>
+                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                    aenean rhoncus posuere odio in tincidunt proin iaculis.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="contact_us_container">
+        <a name="Contact"></a>
+        <div class="contact_us">
+            <h1>Contact us</h1>
+
+            <p>Proin iaculis purus consequat sem cure.</p>
+
+            <form>
+                <ul>
+                    <li>
+                        <input type="text" required name="name" placeholder="Your Name *"/>
+                    </li>
+                    <li>
+                        <input type="text" required name="contact" placeholder="Your e-mail *"/>
+                    </li>
+                    <li>
+                        <input type="text" name="subject" placeholder="Subject"/>
+                    </li>
+                    <li>
+                        <textarea name="comment" cols="40" rows="3" required placeholder="Your message *"></textarea>
+                    </li>
+                </ul>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer_container">
+        <div class="footer">
+            <p>© Copyright 2014 Oleksandr Bondarenko</p>
+
+            <div class="social_network">
+                <img id="facebook" src="images/facebook.png">
+                <img id="google+" src="images/google+.png">
+                <img id="twitter" src="images/twitter.png">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
